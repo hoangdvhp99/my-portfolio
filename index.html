@@ -4,10 +4,40 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>HoangDV - CV</title>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div id="root"></div>
+  
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', event => {
+        // Activate Bootstrap scrollspy on the main nav element
+        const sideNav = document.body.querySelector('#sideNav');
+        if (sideNav) {
+            new bootstrap.ScrollSpy(document.body, {
+                target: '#sideNav',
+                rootMargin: '0px 0px -40%',
+            });
+        };
+
+        // Collapse responsive navbar when toggler is visible
+        const navbarToggler = document.body.querySelector('.navbar-toggler');
+        const responsiveNavItems = [].slice.call(
+            document.querySelectorAll('#navbarResponsive .nav-link')
+        );
+        responsiveNavItems.map(function (responsiveNavItem) {
+            responsiveNavItem.addEventListener('click', () => {
+                if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                    navbarToggler.click();
+                }
+            });
+        });
+      }); 
+    </script>
   </body>
 </html>
