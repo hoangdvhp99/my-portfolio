@@ -1,6 +1,43 @@
-import Avatar from '/img/sapa.jpg';
+import Avatar from '/img/avatar.jpg';
 
 export default function Navbar() {
+  // useEffect(() => {
+  //   // window.addEventListener('DOMContentLoaded', event => {
+  //   //   // Activate Bootstrap scrollspy on the main nav element
+  //   //   const sideNav = document.body.querySelector('#sideNav');
+  //   //   if (sideNav) {
+  //   //       new bootstrap.ScrollSpy(document.body, {
+  //   //           target: '#sideNav',
+  //   //           rootMargin: '0px 0px -40%',
+  //   //       });
+  //   //   };
+
+  //   //   // Collapse responsive navbar when toggler is visible
+  //   //   const navbarToggler = document.body.querySelector('.navbar-toggler');
+  //   //   const responsiveNavItems = [].slice.call(
+  //   //       document.querySelectorAll('#navbarResponsive .nav-link')
+  //   //   );
+  //   //   responsiveNavItems.map(function (responsiveNavItem) {
+  //   //       responsiveNavItem?.addEventListener('click', () => {
+  //   //           if (window.getComputedStyle(navbarToggler).display !== 'none') {
+  //   //               navbarToggler.click();
+  //   //           }
+  //   //       });
+  //   //   });
+  //   // }); 
+  // }, []);
+
+  const toggleNavbar = () => {
+    const menuMobile = document.getElementById('navbarResponsive');
+    if (menuMobile) {
+      if (menuMobile.style.display === 'none') {
+        menuMobile.style.display = 'block'
+      } else {
+        menuMobile.style.display = 'none'
+      }
+    }
+  }
+
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -19,11 +56,9 @@ export default function Navbar() {
       <button
         className="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onClick={toggleNavbar}
       >
         <span className="navbar-toggler-icon"></span>
       </button>

@@ -1,5 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
-// import Footer from './sections/Footer';
 import Navbar from './sections/Navbar';
 import AboutSection from './sections/AboutSection';
 import EducationSection from './sections/EducationSection';
@@ -20,7 +20,6 @@ function App() {
         <SkillsSection />
         <hr className="m-0" />
       </div>
-      {/* <Footer /> */}
     </>
   );
 }
