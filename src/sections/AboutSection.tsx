@@ -22,16 +22,28 @@ function AboutSection() {
           proposition.
         </p>
         <div className="social-icons">
-          <a className="social-icon" href="#!">
+          <a
+            className="social-icon"
+            href="https://www.linkedin.com/in/hoangdv-vn/"
+            target="_blank"
+          >
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a className="social-icon" href="#!">
+          {/* <a className="social-icon" href="#!" target="_blank">
             <i className="fab fa-github"></i>
+          </a> */}
+          <a
+            className="social-icon"
+            href="https://join.skype.com/invite/xG1qr01dOkGb"
+            target="_blank"
+          >
+            <i className="fab fa-skype"></i>
           </a>
-          <a className="social-icon" href="#!">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a className="social-icon" href="#!">
+          <a
+            className="social-icon"
+            href="https://www.facebook.com/hoang.dangviet.hp/"
+            target="_blank"
+          >
             <i className="fab fa-facebook-f"></i>
           </a>
         </div>
