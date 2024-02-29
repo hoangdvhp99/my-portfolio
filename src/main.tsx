@@ -5,6 +5,7 @@ import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Portfolio from './pages/porfolio/index.tsx';
 import { Page404 } from './pages/404/404.tsx';
+import Utils from './pages/utils/index.tsx';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Portfolio />,
+  },
+  {
+    path: "/utils",
+    element: <Utils />,
   },
   {
     path: "/*",
