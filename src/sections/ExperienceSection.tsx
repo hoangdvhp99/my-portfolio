@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import ExperienceItem from '../../../components/ExperienceItem';
-import ModalExperienceDetail from '../../../components/ModalExperienceDetail';
-import { Experiences_Data, IExperience } from '../../../data';
+import ExperienceItem from '../components/ExperienceItem';
+import ModalExperienceDetail from '../components/ModalExperienceDetail';
+import { Experiences_Data, IExperience } from '../data';
 
 function ExperienceSection() {
   const [itemViewed, setItemViewed] = useState<IExperience | null>();
