@@ -85,6 +85,11 @@ export default function Navbar() {
               Skills
             </a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link js-scroll-trigger" href="#aff">
+              Affiliates
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

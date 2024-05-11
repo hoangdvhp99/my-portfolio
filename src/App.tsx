@@ -5,6 +5,7 @@ import AboutSection from './sections/AboutSection';
 import EducationSection from './sections/EducationSection';
 import SkillsSection from './sections/SkillsSection';
 import ExperienceSection from './sections/ExperienceSection';
+import AffiliateSection from "./sections/AffiliateSection";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <hr className="m-0" />
         <SkillsSection />
         <hr className="m-0" />
+        <AffiliateSection />
       </div>
     </>
   );
