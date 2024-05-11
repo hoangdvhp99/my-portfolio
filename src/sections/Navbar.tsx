@@ -38,6 +38,14 @@ export default function Navbar() {
     }
   }
 
+  const NavItem = ({ name, href }: { name: string, href: string }) => (
+    <li className="nav-item">
+      <a className="nav-link js-scroll-trigger" href={href}>
+        {name}
+      </a>
+    </li>
+  );
+
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -65,31 +73,11 @@ export default function Navbar() {
       {/* <div className="collapse navbar-collapse" id="navbarResponsive"> */}
       <div className="navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#experience">
-              Experience
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#education">
-              Education
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#skills">
-              Skills
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#aff">
-              Affiliates
-            </a>
-          </li>
+          <NavItem name="About" href="#about" />
+          <NavItem name="Experience" href="#experience" />
+          <NavItem name="Education" href="#education" />
+          <NavItem name="Skills" href="#skills" />
+          <NavItem name="Affiliates" href="#aff" />
         </ul>
       </div>
     </nav>

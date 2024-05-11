@@ -12,15 +12,15 @@ function App() {
     <>
       <Navbar />
       <div className="container-fluid p-0">
-        <AboutSection />
+        <AffiliateSection />
         <hr className="m-0" />
+        <AboutSection />
         <ExperienceSection />
         <hr className="m-0" />
         <EducationSection />
         <hr className="m-0" />
         <SkillsSection />
         <hr className="m-0" />
-        <AffiliateSection />
       </div>
     </>
   );
