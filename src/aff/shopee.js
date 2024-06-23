@@ -149,7 +149,7 @@ Shopee Việt Nam Smartlink cho tất cả thiết bị
 </div>
 </div>`;
 
-  let atProductGenerateElement = document.getElementById('at-widget');
+  let atProductGenerateElement = document.getElementById('at-widget-shopee');
   atProductGenerateElement.innerHTML =
     atProductGenerateCss + atProductGenerateHtml;
 
